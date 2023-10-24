@@ -57,8 +57,7 @@ public class TaskController {
   public TaskModel update(@RequestBody TaskModel taskModel, HttpServletRequest request, @PathVariable UUID id) {
     var task = this.taskRepository.findById(id).orElse(null);
 
-    Utils.copyNonNullProperties(taskModel, task);
-
+    br.com.davicorreia.todolist.utils.Utils.copyNonNullProperties(taskModel, task);
     return this.taskRepository.save(task);
   }
   }
