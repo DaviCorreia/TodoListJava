@@ -52,7 +52,6 @@ Praticando meus conhecimentos em requisições HTTP com a criação de uma aplic
 ### Testes:
 - ApiDog
 
-4. A aplicação estará disponível na porta 8080.
 
 ## Tecnologias
 - Java
